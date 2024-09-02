@@ -1,0 +1,119 @@
+2024-09-02 18:15:56,146 INFO Database connected.
+2024-09-02 18:15:56,146 INFO Start polling
+2024-09-02 18:15:56,314 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 18:16:50,588 INFO Polling stopped
+2024-09-02 18:16:50,856 INFO Database disconnected.
+2024-09-02 18:16:50,856 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 18:16:59,077 INFO Database connected.
+2024-09-02 18:16:59,077 INFO Start polling
+2024-09-02 18:16:59,259 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 18:17:16,630 INFO Update id=69751902 is handled. Duration 218 ms by bot id=7092073070
+2024-09-02 18:31:03,919 INFO Polling stopped
+2024-09-02 18:31:04,177 INFO Database disconnected.
+2024-09-02 18:31:04,178 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 18:55:18,943 INFO Database connected.
+2024-09-02 18:55:18,944 INFO Start polling
+2024-09-02 18:55:19,106 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 18:56:01,021 INFO Update id=69751903 is not handled. Duration 15 ms by bot id=7092073070
+2024-09-02 18:56:01,022 ERROR Cause exception while process update id=69751903 by bot id=7092073070
+ValidationError: 2 validation errors for ReplyKeyboardMarkup
+keyboard.0.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=InlineKeyboardButton(text...ack_game=None, pay=None), input_type=InlineKeyboardButton]
+    For further information visit https://errors.pydantic.dev/2.8/v/model_type
+keyboard.1.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=InlineKeyboardButton(text...ack_game=None, pay=None), input_type=InlineKeyboardButton]
+    For further information visit https://errors.pydantic.dev/2.8/v/model_type
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 17, in cmd_start
+    await message.answer(welcome, reply_markup=main_kb())
+                                               ^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\keyboards.py", line 10, in main_kb
+    keyboard = ReplyKeyboardMarkup(keyboard=kb_list, resize_keyboard=True, one_time_keyboard=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for ReplyKeyboardMarkup
+keyboard.0.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=InlineKeyboardButton(text...ack_game=None, pay=None), input_type=InlineKeyboardButton]
+    For further information visit https://errors.pydantic.dev/2.8/v/model_type
+keyboard.1.0
+  Input should be a valid dictionary or instance of KeyboardButton [type=model_type, input_value=InlineKeyboardButton(text...ack_game=None, pay=None), input_type=InlineKeyboardButton]
+    For further information visit https://errors.pydantic.dev/2.8/v/model_type
+2024-09-02 19:01:22,328 INFO Polling stopped
+2024-09-02 19:01:22,590 INFO Database disconnected.
+2024-09-02 19:01:22,591 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 19:02:03,769 INFO Database connected.
+2024-09-02 19:02:03,769 INFO Start polling
+2024-09-02 19:02:03,979 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 19:02:04,313 INFO Update id=69751905 is handled. Duration 265 ms by bot id=7092073070
+2024-09-02 19:02:04,357 INFO Update id=69751904 is handled. Duration 311 ms by bot id=7092073070
+2024-09-02 19:02:08,396 INFO Update id=69751906 is handled. Duration 93 ms by bot id=7092073070
+2024-09-02 19:03:54,642 INFO Polling stopped
+2024-09-02 19:03:54,912 INFO Database disconnected.
+2024-09-02 19:03:54,913 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 19:04:51,823 INFO Database connected.
+2024-09-02 19:04:51,823 INFO Start polling
+2024-09-02 19:04:51,974 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 19:04:52,298 INFO Update id=69751908 is handled. Duration 250 ms by bot id=7092073070
+2024-09-02 19:04:52,312 INFO Update id=69751907 is handled. Duration 265 ms by bot id=7092073070
+2024-09-02 19:05:18,222 INFO Update id=69751909 is handled. Duration 202 ms by bot id=7092073070
+2024-09-02 19:05:43,101 INFO Polling stopped
+2024-09-02 19:05:43,374 INFO Database disconnected.
+2024-09-02 19:05:43,376 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 19:10:34,107 INFO Database connected.
+2024-09-02 19:10:34,107 INFO Start polling
+2024-09-02 19:10:34,285 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-02 19:10:34,619 INFO Update id=69751911 is handled. Duration 266 ms by bot id=7092073070
+2024-09-02 19:10:34,646 INFO Update id=69751910 is handled. Duration 297 ms by bot id=7092073070
+2024-09-02 19:10:37,399 INFO Update id=69751912 is handled. Duration 108 ms by bot id=7092073070
+2024-09-02 19:13:15,178 INFO Polling stopped
+2024-09-02 19:13:15,447 INFO Database disconnected.
+2024-09-02 19:13:15,448 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'

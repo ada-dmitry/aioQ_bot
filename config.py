@@ -1,0 +1,9 @@
+TOKEN = "7092073070:AAGFOnZHUR86RdAjb7pgSN7plOiQe1_4Qow"
+ADMIN_CHAT = "-4577813564"
+SENIOR_CHAT = "-1002215413703"
+DB_NAME = 'qurator_db'
+DB_USER = 'postgres'
+DB_PASSWORD = 'Qwerty'
+DB_HOST = 'localhost'
+DB_PORT = '5432'
+TABLE_NAME = 'users'
