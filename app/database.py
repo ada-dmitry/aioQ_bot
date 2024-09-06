@@ -27,6 +27,7 @@ class Database:
     async def execute(self, query: str, *args):
         async with self.pool.acquire() as connection:
             return await connection.execute(query, *args)
+        
 
     async def fetch(self, query: str, *args):
         async with self.pool.acquire() as connection:
