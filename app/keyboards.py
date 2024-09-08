@@ -19,9 +19,15 @@ main_kb_list = InlineKeyboardMarkup(inline_keyboard=[
 reg_role_kb = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Куратор'), KeyboardButton(text='Первокурсник')]
 ],
-                                  resize_keyboard=True)
+                                  resize_keyboard=True
+                                  )
 
 start_reg_button = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Поехали!')]
 ],
                                   resize_keyboard=True)
+
+help_kb = ReplyKeyboardMarkup(keyboard=[
+    [KeyboardButton(text='👾 Тех.Поддержка 👾'), KeyboardButton(text='😎 Ст.Куратор 😎')]
+],
+                              resize_keyboard=True)

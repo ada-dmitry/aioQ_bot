@@ -1,518 +1,15 @@
-
-2024-09-06 19:15:00,172 INFO Update id=69751946 is handled. Duration 125 ms by bot id=7092073070
-2024-09-06 19:15:02,403 INFO Update id=69751947 is handled. Duration 125 ms by bot id=7092073070
-2024-09-06 19:15:04,544 INFO Update id=69751948 is handled. Duration 265 ms by bot id=7092073070
-2024-09-06 19:15:10,170 INFO Polling stopped
-2024-09-06 19:15:10,444 INFO Database disconnected.
-2024-09-06 19:15:10,444 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 19:30:34,844 INFO Database connected.
-2024-09-06 19:30:34,844 INFO Start polling
-2024-09-06 19:30:35,029 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 19:30:35,329 INFO Update id=69751950 is handled. Duration 219 ms by bot id=7092073070
-2024-09-06 19:30:35,349 INFO Update id=69751951 is handled. Duration 250 ms by bot id=7092073070
-2024-09-06 19:30:35,376 INFO Update id=69751949 is handled. Duration 265 ms by bot id=7092073070
-2024-09-06 19:30:37,586 INFO Update id=69751952 is handled. Duration 0 ms by bot id=7092073070
-2024-09-06 19:31:04,298 INFO Update id=69751953 is handled. Duration 0 ms by bot id=7092073070
-2024-09-06 19:33:10,153 INFO Polling stopped
-2024-09-06 19:33:10,417 INFO Database disconnected.
-2024-09-06 19:33:10,418 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 19:33:15,733 INFO Database connected.
-2024-09-06 19:33:15,733 INFO Start polling
-2024-09-06 19:33:15,909 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 19:33:16,349 INFO Update id=69751954 is handled. Duration 250 ms by bot id=7092073070
-2024-09-06 19:33:17,766 INFO Update id=69751955 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 19:33:17,766 ERROR Cause exception while process update id=69751955 by bot id=7092073070
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-Traceback (most recent call last):
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 113, in trigger
-    result, data = await handler.check(event, **kwargs)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 94, in check
-    check = await event_filter.call(*args, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 48, in call
-    return await loop.run_in_executor(None, wrapped)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 97, in resolve
-    return self._resolve(value=value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 81, in _resolve
-    value = operation.resolve(value=value, initial_value=initial_value)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\operations\combination.py", line 36, in resolve
-    return self.combinator(resolve_if_needed(self.left, initial_value), value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-2024-09-06 19:33:30,153 INFO Update id=69751956 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 19:33:30,153 ERROR Cause exception while process update id=69751956 by bot id=7092073070
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-Traceback (most recent call last):
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 113, in trigger
-    result, data = await handler.check(event, **kwargs)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 94, in check
-    check = await event_filter.call(*args, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 48, in call
-    return await loop.run_in_executor(None, wrapped)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 97, in resolve
-    return self._resolve(value=value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 81, in _resolve
-    value = operation.resolve(value=value, initial_value=initial_value)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\operations\combination.py", line 36, in resolve
-    return self.combinator(resolve_if_needed(self.left, initial_value), value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-2024-09-06 19:33:30,496 INFO Update id=69751957 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 19:33:30,496 ERROR Cause exception while process update id=69751957 by bot id=7092073070
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-Traceback (most recent call last):
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 113, in trigger
-    result, data = await handler.check(event, **kwargs)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 94, in check
-    check = await event_filter.call(*args, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 48, in call
-    return await loop.run_in_executor(None, wrapped)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 97, in resolve
-    return self._resolve(value=value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 81, in _resolve
-    value = operation.resolve(value=value, initial_value=initial_value)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\operations\combination.py", line 36, in resolve
-    return self.combinator(resolve_if_needed(self.left, initial_value), value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-2024-09-06 19:33:30,773 INFO Update id=69751958 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 19:33:30,774 ERROR Cause exception while process update id=69751958 by bot id=7092073070
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-Traceback (most recent call last):
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 113, in trigger
-    result, data = await handler.check(event, **kwargs)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 94, in check
-    check = await event_filter.call(*args, **kwargs)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 48, in call
-    return await loop.run_in_executor(None, wrapped)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 97, in resolve
-    return self._resolve(value=value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\magic.py", line 81, in _resolve
-    value = operation.resolve(value=value, initial_value=initial_value)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\magic_filter\operations\combination.py", line 36, in resolve
-    return self.combinator(resolve_if_needed(self.left, initial_value), value)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: unsupported operand type(s) for |: 'Command' and 'str'
-2024-09-06 19:33:55,947 INFO Polling stopped
-2024-09-06 19:33:56,211 INFO Database disconnected.
-2024-09-06 19:33:56,212 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 19:34:00,310 INFO Database connected.
-2024-09-06 19:34:00,310 INFO Start polling
-2024-09-06 19:34:00,489 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 19:34:00,775 INFO Update id=69751959 is handled. Duration 218 ms by bot id=7092073070
-2024-09-06 19:34:02,049 INFO Update id=69751960 is handled. Duration 77 ms by bot id=7092073070
-2024-09-06 19:34:07,109 INFO Update id=69751961 is handled. Duration 265 ms by bot id=7092073070
-2024-09-06 19:34:30,589 INFO Update id=69751962 is handled. Duration 280 ms by bot id=7092073070
-2024-09-06 19:34:32,785 INFO Update id=69751963 is handled. Duration 109 ms by bot id=7092073070
-2024-09-06 19:34:37,384 INFO Update id=69751964 is handled. Duration 202 ms by bot id=7092073070
-2024-09-06 19:34:39,943 INFO Update id=69751965 is handled. Duration 109 ms by bot id=7092073070
-2024-09-06 19:34:42,752 INFO Update id=69751966 is handled. Duration 217 ms by bot id=7092073070
-2024-09-06 19:34:46,055 INFO Update id=69751967 is handled. Duration 188 ms by bot id=7092073070
-2024-09-06 19:47:20,181 INFO Polling stopped
-2024-09-06 19:47:20,439 INFO Database disconnected.
-2024-09-06 19:47:20,439 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:30:37,187 INFO Database connected.
-2024-09-06 20:30:37,187 INFO Start polling
-2024-09-06 20:30:37,394 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:30:37,800 INFO Update id=69751968 is handled. Duration 297 ms by bot id=7092073070
-2024-09-06 20:30:41,061 INFO Update id=69751969 is handled. Duration 188 ms by bot id=7092073070
-2024-09-06 20:30:45,845 INFO Update id=69751970 is handled. Duration 500 ms by bot id=7092073070
-2024-09-06 20:30:49,363 INFO Update id=69751971 is handled. Duration 155 ms by bot id=7092073070
-2024-09-06 20:30:53,074 INFO Update id=69751972 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 20:30:53,074 ERROR Cause exception while process update id=69751972 by bot id=7092073070
-TypeError: FSMContext.get_data() takes 1 positional argument but 2 were given
-Traceback (most recent call last):
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 76, in process_group
-    role = await state.get_data('role')
-                 ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: FSMContext.get_data() takes 1 positional argument but 2 were given
-2024-09-06 20:31:34,684 INFO Polling stopped
-2024-09-06 20:31:34,958 INFO Database disconnected.
-2024-09-06 20:31:34,958 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:31:39,124 INFO Database connected.
-2024-09-06 20:31:39,124 INFO Start polling
-2024-09-06 20:31:39,321 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:31:41,862 INFO Update id=69751973 is handled. Duration 250 ms by bot id=7092073070
-2024-09-06 20:31:43,265 INFO Update id=69751974 is handled. Duration 172 ms by bot id=7092073070
-2024-09-06 20:31:46,445 INFO Update id=69751975 is handled. Duration 172 ms by bot id=7092073070
-2024-09-06 20:31:49,665 INFO Update id=69751976 is handled. Duration 217 ms by bot id=7092073070
-2024-09-06 20:32:04,734 INFO Polling stopped
-2024-09-06 20:32:04,996 INFO Database disconnected.
-2024-09-06 20:32:04,996 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:45:53,594 INFO Database connected.
-2024-09-06 20:45:53,595 INFO Start polling
-2024-09-06 20:45:53,777 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:45:54,172 INFO Update id=69751977 is handled. Duration 312 ms by bot id=7092073070
-2024-09-06 20:45:55,229 INFO Update id=69751978 is handled. Duration 125 ms by bot id=7092073070
-2024-09-06 20:45:57,561 INFO Update id=69751979 is handled. Duration 109 ms by bot id=7092073070
-2024-09-06 20:45:58,279 INFO Update id=69751980 is handled. Duration 125 ms by bot id=7092073070
-2024-09-06 20:46:02,414 INFO Update id=69751981 is handled. Duration 202 ms by bot id=7092073070
-2024-09-06 20:46:05,936 INFO Update id=69751982 is handled. Duration 141 ms by bot id=7092073070
-2024-09-06 20:46:18,435 INFO Update id=69751983 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 20:46:18,435 ERROR Cause exception while process update id=69751983 by bot id=7092073070
-ValidationError: 1 validation error for SendMessage
-text
-  Input should be a valid string [type=string_type, input_value=['C22-712', 'С23-712'], input_type=list]
-    For further information visit https://errors.pydantic.dev/2.8/v/string_type
-Traceback (most recent call last):
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
-    return await handler(event, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
-    return await self._propagate_event(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
-    return await wrapped()
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 91, in process_cur_groups
-    await message.answer(groups)
-          ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\types\message.py", line 2038, in answer
-    return SendMessage(
-           ^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\pydantic\main.py", line 193, in __init__
-    self.__pydantic_validator__.validate_python(data, self_instance=self)
-pydantic_core._pydantic_core.ValidationError: 1 validation error for SendMessage
-text
-  Input should be a valid string [type=string_type, input_value=['C22-712', 'С23-712'], input_type=list]
-    For further information visit https://errors.pydantic.dev/2.8/v/string_type
-2024-09-06 20:47:06,289 INFO Polling stopped
-2024-09-06 20:47:06,557 INFO Database disconnected.
-2024-09-06 20:47:06,557 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:47:10,441 INFO Database connected.
-2024-09-06 20:47:10,442 INFO Start polling
-2024-09-06 20:47:10,624 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:47:14,948 INFO Update id=69751984 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 20:47:27,577 INFO Update id=69751985 is handled. Duration 265 ms by bot id=7092073070
-2024-09-06 20:47:28,623 INFO Update id=69751986 is handled. Duration 77 ms by bot id=7092073070
-2024-09-06 20:47:30,323 INFO Update id=69751987 is handled. Duration 157 ms by bot id=7092073070
-2024-09-06 20:47:31,204 INFO Update id=69751988 is handled. Duration 140 ms by bot id=7092073070
-2024-09-06 20:47:35,108 INFO Update id=69751989 is handled. Duration 155 ms by bot id=7092073070
-2024-09-06 20:47:41,836 INFO Update id=69751990 is handled. Duration 94 ms by bot id=7092073070
-2024-09-06 20:48:03,499 INFO Polling stopped
-2024-09-06 20:48:03,767 INFO Database disconnected.
-2024-09-06 20:48:03,767 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:48:08,174 INFO Database connected.
-2024-09-06 20:48:08,174 INFO Start polling
-2024-09-06 20:48:08,352 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 20:48:08,648 INFO Update id=69751991 is handled. Duration 234 ms by bot id=7092073070
-2024-09-06 20:48:09,409 INFO Update id=69751992 is handled. Duration 93 ms by bot id=7092073070
-2024-09-06 20:48:10,910 INFO Update id=69751993 is handled. Duration 93 ms by bot id=7092073070
-2024-09-06 20:48:11,932 INFO Update id=69751994 is handled. Duration 141 ms by bot id=7092073070
-2024-09-06 20:48:15,475 INFO Update id=69751995 is handled. Duration 125 ms by bot id=7092073070
-2024-09-06 20:48:16,789 INFO Update id=69751996 is handled. Duration 155 ms by bot id=7092073070
-2024-09-06 20:48:21,000 INFO Polling stopped
-2024-09-06 20:48:21,271 INFO Database disconnected.
-2024-09-06 20:48:21,272 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 21:05:55,301 INFO Database connected.
-2024-09-06 21:05:55,301 INFO Start polling
-2024-09-06 21:05:55,482 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 21:05:57,667 INFO Update id=69751997 is handled. Duration 217 ms by bot id=7092073070
-2024-09-06 21:05:58,711 INFO Update id=69751998 is handled. Duration 94 ms by bot id=7092073070
-2024-09-06 21:06:00,430 INFO Update id=69751999 is handled. Duration 94 ms by bot id=7092073070
-2024-09-06 21:06:02,179 INFO Update id=69752000 is handled. Duration 156 ms by bot id=7092073070
-2024-09-06 21:06:05,594 INFO Update id=69752001 is handled. Duration 172 ms by bot id=7092073070
-2024-09-06 21:06:08,890 INFO Update id=69752002 is handled. Duration 94 ms by bot id=7092073070
-2024-09-06 21:45:28,113 INFO Polling stopped
-2024-09-06 21:45:28,368 INFO Database disconnected.
-2024-09-06 21:45:28,370 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 22:21:22,197 INFO Database connected.
-2024-09-06 22:21:22,197 INFO Start polling
-2024-09-06 22:21:22,392 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 22:21:22,468 INFO Update id=69752003 is not handled. Duration 0 ms by bot id=7092073070
-2024-09-06 22:21:23,663 INFO Update id=69752004 is handled. Duration 233 ms by bot id=7092073070
-2024-09-06 22:21:25,322 INFO Update id=69752005 is handled. Duration 109 ms by bot id=7092073070
-2024-09-06 22:21:31,977 INFO Update id=69752006 is handled. Duration 109 ms by bot id=7092073070
-2024-09-06 22:21:33,111 INFO Update id=69752007 is handled. Duration 93 ms by bot id=7092073070
-2024-09-06 22:21:36,163 INFO Update id=69752008 is handled. Duration 140 ms by bot id=7092073070
-2024-09-06 22:21:42,021 INFO Update id=69752009 is not handled. Duration 62 ms by bot id=7092073070
-2024-09-06 22:21:42,021 ERROR Cause exception while process update id=69752009 by bot id=7092073070
+2024-09-07 15:14:44,637 INFO Database connected.
+2024-09-07 15:14:44,638 INFO Start polling
+2024-09-07 15:14:45,107 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:14:53,949 INFO Update id=69752044 is handled. Duration 375 ms by bot id=7092073070
+2024-09-07 15:14:55,313 INFO Update id=69752045 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-07 15:15:00,097 INFO Update id=69752046 is handled. Duration 233 ms by bot id=7092073070
+2024-09-07 15:15:01,732 INFO Update id=69752047 is handled. Duration 156 ms by bot id=7092073070
+2024-09-07 15:15:08,018 INFO Update id=69752048 is handled. Duration 172 ms by bot id=7092073070
+2024-09-07 15:15:10,807 INFO Update id=69752049 is handled. Duration 202 ms by bot id=7092073070
+2024-09-07 15:15:14,083 INFO Update id=69752050 is handled. Duration 202 ms by bot id=7092073070
+2024-09-07 15:15:18,070 INFO Update id=69752051 is not handled. Duration 172 ms by bot id=7092073070
+2024-09-07 15:15:18,070 ERROR Cause exception while process update id=69752051 by bot id=7092073070
 PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
 Traceback (most recent call last):
   File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
@@ -563,8 +60,8 @@ Traceback (most recent call last):
   File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
     return await wrapped()
            ^^^^^^^^^^^^^^^
-  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 109, in process_cur_groups
-    await db.execute(query, user_id, current_data['name'],\
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 104, in process_cur_groups
+    await db.execute(query, user_id, current_data['name'], current_data['role'], current_data['group'], groups[0])
   File "D:\Work\Coding\aioQ_bot\app\database.py", line 29, in execute
     return await connection.execute(query, *args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -585,19 +82,266 @@ Traceback (most recent call last):
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "asyncpg\protocol\protocol.pyx", line 166, in prepare
 asyncpg.exceptions.PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
-2024-09-06 22:22:05,718 INFO Polling stopped
-2024-09-06 22:22:05,986 INFO Database disconnected.
-2024-09-06 22:22:05,987 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 22:22:18,449 INFO Database connected.
-2024-09-06 22:22:18,450 INFO Start polling
-2024-09-06 22:22:18,622 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-06 22:22:18,951 INFO Update id=69752010 is handled. Duration 219 ms by bot id=7092073070
-2024-09-06 22:22:19,902 INFO Update id=69752011 is handled. Duration 109 ms by bot id=7092073070
-2024-09-06 22:22:24,108 INFO Update id=69752012 is handled. Duration 140 ms by bot id=7092073070
-2024-09-06 22:22:25,707 INFO Update id=69752013 is handled. Duration 140 ms by bot id=7092073070
-2024-09-06 22:22:27,819 INFO Update id=69752014 is handled. Duration 187 ms by bot id=7092073070
-2024-09-06 22:22:32,257 INFO Update id=69752015 is not handled. Duration 16 ms by bot id=7092073070
-2024-09-06 22:22:32,257 ERROR Cause exception while process update id=69752015 by bot id=7092073070
+2024-09-07 15:17:00,013 INFO Polling stopped
+2024-09-07 15:17:00,286 INFO Database disconnected.
+2024-09-07 15:17:00,287 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:17:08,231 INFO Database connected.
+2024-09-07 15:17:08,232 INFO Start polling
+2024-09-07 15:17:08,576 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:21:27,992 INFO Polling stopped
+2024-09-07 15:21:28,264 INFO Database disconnected.
+2024-09-07 15:21:28,265 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:21:37,988 INFO Database connected.
+2024-09-07 15:21:37,989 INFO Start polling
+2024-09-07 15:21:38,260 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:21:38,735 INFO Update id=69752052 is handled. Duration 344 ms by bot id=7092073070
+2024-09-07 15:21:59,482 INFO Update id=69752053 is handled. Duration 625 ms by bot id=7092073070
+2024-09-07 15:22:02,859 INFO Update id=69752054 is handled. Duration 141 ms by bot id=7092073070
+2024-09-07 15:22:05,215 INFO Update id=69752055 is handled. Duration 202 ms by bot id=7092073070
+2024-09-07 15:22:10,445 INFO Update id=69752056 is handled. Duration 202 ms by bot id=7092073070
+2024-09-07 15:22:14,686 INFO Update id=69752057 is not handled. Duration 297 ms by bot id=7092073070
+2024-09-07 15:22:14,686 ERROR Cause exception while process update id=69752057 by bot id=7092073070
+ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value={'name': 'а', 'role': '...', 'group': 'С22-712'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 103, in process_cur_groups
+    await message.answer(current_data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\types\message.py", line 2038, in answer
+    return SendMessage(
+           ^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value={'name': 'а', 'role': '...', 'group': 'С22-712'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2024-09-07 15:27:45,518 INFO Polling stopped
+2024-09-07 15:27:45,772 INFO Database disconnected.
+2024-09-07 15:27:45,773 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:27:54,249 INFO Database connected.
+2024-09-07 15:27:54,250 INFO Start polling
+2024-09-07 15:27:54,613 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:27:55,170 INFO Update id=69752058 is handled. Duration 420 ms by bot id=7092073070
+2024-09-07 15:27:58,168 INFO Update id=69752059 is handled. Duration 280 ms by bot id=7092073070
+2024-09-07 15:27:59,460 INFO Update id=69752060 is handled. Duration 140 ms by bot id=7092073070
+2024-09-07 15:28:01,704 INFO Update id=69752061 is handled. Duration 140 ms by bot id=7092073070
+2024-09-07 15:28:05,813 INFO Update id=69752062 is handled. Duration 234 ms by bot id=7092073070
+2024-09-07 15:28:07,953 INFO Update id=69752063 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-07 15:28:07,953 ERROR Cause exception while process update id=69752063 by bot id=7092073070
+ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value={'name': 'b', 'role': 'К...', 'group': 'С22-712'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 102, in process_cur_groups
+    await message.answer(current_data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\types\message.py", line 2038, in answer
+    return SendMessage(
+           ^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value={'name': 'b', 'role': 'К...', 'group': 'С22-712'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2024-09-07 15:33:36,476 INFO Polling stopped
+2024-09-07 15:33:36,740 INFO Database disconnected.
+2024-09-07 15:33:36,741 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:33:46,131 INFO Database connected.
+2024-09-07 15:33:46,133 INFO Start polling
+2024-09-07 15:33:46,541 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:33:47,095 INFO Update id=69752064 is handled. Duration 422 ms by bot id=7092073070
+2024-09-07 15:33:48,192 INFO Update id=69752065 is handled. Duration 125 ms by bot id=7092073070
+2024-09-07 15:33:49,281 INFO Update id=69752066 is handled. Duration 125 ms by bot id=7092073070
+2024-09-07 15:33:50,484 INFO Update id=69752067 is handled. Duration 141 ms by bot id=7092073070
+2024-09-07 15:33:53,925 INFO Update id=69752068 is handled. Duration 92 ms by bot id=7092073070
+2024-09-07 15:33:57,434 INFO Update id=69752069 is not handled. Duration 16 ms by bot id=7092073070
+2024-09-07 15:33:57,434 ERROR Cause exception while process update id=69752069 by bot id=7092073070
+PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 104, in process_cur_groups
+    await db.execute(query, user_id, current_data['name'], current_data['role'], current_data['group'], groups[0])
+  File "D:\Work\Coding\aioQ_bot\app\database.py", line 29, in execute
+    return await connection.execute(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 353, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1794, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1892, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1925, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 433, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\protocol\protocol.pyx", line 166, in prepare
+asyncpg.exceptions.PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
+2024-09-07 15:36:32,770 INFO Polling stopped
+2024-09-07 15:36:33,048 INFO Database disconnected.
+2024-09-07 15:36:33,048 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:36:41,740 INFO Database connected.
+2024-09-07 15:36:41,741 INFO Start polling
+2024-09-07 15:36:42,074 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:36:43,045 INFO Update id=69752070 is handled. Duration 842 ms by bot id=7092073070
+2024-09-07 15:36:44,010 INFO Update id=69752071 is handled. Duration 109 ms by bot id=7092073070
+2024-09-07 15:36:45,897 INFO Update id=69752072 is handled. Duration 140 ms by bot id=7092073070
+2024-09-07 15:36:48,581 INFO Update id=69752073 is handled. Duration 157 ms by bot id=7092073070
+2024-09-07 15:36:52,025 INFO Update id=69752074 is handled. Duration 125 ms by bot id=7092073070
+2024-09-07 15:36:55,181 INFO Update id=69752075 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-07 15:36:55,181 ERROR Cause exception while process update id=69752075 by bot id=7092073070
 PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
 Traceback (most recent call last):
   File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
@@ -649,7 +393,7 @@ Traceback (most recent call last):
     return await wrapped()
            ^^^^^^^^^^^^^^^
   File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 108, in process_cur_groups
-    await db.execute(query, user_id, current_data['name'],\
+    await db.execute(query, user_id, current_data['name'], current_data['role'], current_data['group'], groups[0])
   File "D:\Work\Coding\aioQ_bot\app\database.py", line 29, in execute
     return await connection.execute(query, *args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -670,6 +414,440 @@ Traceback (most recent call last):
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "asyncpg\protocol\protocol.pyx", line 166, in prepare
 asyncpg.exceptions.PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
-2024-09-06 22:23:12,075 INFO Polling stopped
-2024-09-06 22:23:12,348 INFO Database disconnected.
-2024-09-06 22:23:12,349 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:40:52,934 INFO Polling stopped
+2024-09-07 15:40:53,201 INFO Database disconnected.
+2024-09-07 15:40:53,202 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:41:01,612 INFO Database connected.
+2024-09-07 15:41:01,613 INFO Start polling
+2024-09-07 15:41:01,912 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:41:03,829 INFO Update id=69752076 is handled. Duration 1484 ms by bot id=7092073070
+2024-09-07 15:41:05,331 INFO Update id=69752077 is handled. Duration 282 ms by bot id=7092073070
+2024-09-07 15:41:16,138 INFO Update id=69752078 is handled. Duration 140 ms by bot id=7092073070
+2024-09-07 15:41:17,641 INFO Update id=69752079 is handled. Duration 109 ms by bot id=7092073070
+2024-09-07 15:41:21,839 INFO Update id=69752080 is handled. Duration 140 ms by bot id=7092073070
+2024-09-07 15:41:25,208 INFO Update id=69752081 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-07 15:41:25,208 ERROR Cause exception while process update id=69752081 by bot id=7092073070
+PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 108, in process_cur_groups
+    await db.execute(query, user_id, current_data['name'], current_data['role'], current_data['group'], groups[0])
+  File "D:\Work\Coding\aioQ_bot\app\database.py", line 29, in execute
+    return await connection.execute(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 353, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1794, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1892, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 1925, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\asyncpg\connection.py", line 433, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\protocol\protocol.pyx", line 166, in prepare
+asyncpg.exceptions.PostgresSyntaxError: ошибка синтаксиса (примерное положение: "group")
+2024-09-07 15:44:48,572 INFO Polling stopped
+2024-09-07 15:44:48,856 INFO Database disconnected.
+2024-09-07 15:44:48,857 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:46:06,924 INFO Database connected.
+2024-09-07 15:46:06,924 INFO Start polling
+2024-09-07 15:46:07,320 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-07 15:46:21,433 INFO Update id=69752082 is handled. Duration 516 ms by bot id=7092073070
+2024-09-07 15:46:21,951 INFO Update id=69752083 is handled. Duration 109 ms by bot id=7092073070
+2024-09-07 15:46:23,615 INFO Update id=69752084 is handled. Duration 125 ms by bot id=7092073070
+2024-09-07 15:46:25,320 INFO Update id=69752085 is handled. Duration 94 ms by bot id=7092073070
+2024-09-07 15:46:29,322 INFO Update id=69752086 is handled. Duration 202 ms by bot id=7092073070
+2024-09-07 15:46:35,691 INFO Update id=69752087 is handled. Duration 187 ms by bot id=7092073070
+2024-09-07 15:55:52,001 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2024-09-07 15:55:52,001 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
+2024-09-07 15:55:53,010 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-07 15:55:53,010 WARNING Sleep for 1.212240 seconds and try again... (tryings = 1, bot id = 7092073070)
+2024-09-07 18:55:50,530 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-07 18:55:50,531 WARNING Sleep for 1.474290 seconds and try again... (tryings = 2, bot id = 7092073070)
+2024-09-07 18:55:52,013 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-07 18:55:52,013 WARNING Sleep for 1.829191 seconds and try again... (tryings = 3, bot id = 7092073070)
+2024-09-07 18:55:53,855 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-07 18:55:53,855 WARNING Sleep for 2.470114 seconds and try again... (tryings = 4, bot id = 7092073070)
+2024-09-08 09:55:22,034 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-08 09:55:22,034 WARNING Sleep for 3.237569 seconds and try again... (tryings = 5, bot id = 7092073070)
+2024-09-08 09:55:25,281 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-08 09:55:25,281 WARNING Sleep for 4.332047 seconds and try again... (tryings = 6, bot id = 7092073070)
+2024-09-08 09:55:29,617 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-08 09:55:29,617 WARNING Sleep for 5.054253 seconds and try again... (tryings = 7, bot id = 7092073070)
+2024-09-08 09:55:44,893 INFO Connection established (tryings = 8, bot id = 7092073070)
+2024-09-08 10:00:53,390 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2024-09-08 10:00:53,390 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
+2024-09-08 10:00:54,402 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:00:54,402 WARNING Sleep for 1.189513 seconds and try again... (tryings = 1, bot id = 7092073070)
+2024-09-08 10:00:55,602 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:00:55,602 WARNING Sleep for 1.504118 seconds and try again... (tryings = 2, bot id = 7092073070)
+2024-09-08 10:11:26,795 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:11:26,796 WARNING Sleep for 2.038343 seconds and try again... (tryings = 3, bot id = 7092073070)
+2024-09-08 10:11:28,838 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:11:28,838 WARNING Sleep for 2.792008 seconds and try again... (tryings = 4, bot id = 7092073070)
+2024-09-08 10:11:31,645 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:11:31,645 WARNING Sleep for 3.605106 seconds and try again... (tryings = 5, bot id = 7092073070)
+2024-09-08 10:11:45,563 INFO Connection established (tryings = 6, bot id = 7092073070)
+2024-09-08 10:18:46,182 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2024-09-08 10:18:46,183 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
+2024-09-08 10:18:47,187 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:18:47,187 WARNING Sleep for 1.426399 seconds and try again... (tryings = 1, bot id = 7092073070)
+2024-09-08 10:44:36,387 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:44:36,388 WARNING Sleep for 1.856942 seconds and try again... (tryings = 2, bot id = 7092073070)
+2024-09-08 10:44:38,269 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:44:38,269 WARNING Sleep for 2.336785 seconds and try again... (tryings = 3, bot id = 7092073070)
+2024-09-08 10:44:40,610 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 10:44:40,611 WARNING Sleep for 2.977302 seconds and try again... (tryings = 4, bot id = 7092073070)
+2024-09-08 10:44:53,759 INFO Connection established (tryings = 5, bot id = 7092073070)
+2024-09-08 10:51:22,995 INFO Polling stopped
+2024-09-08 10:51:23,253 INFO Database disconnected.
+2024-09-08 10:51:23,255 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 10:56:38,189 INFO Database connected.
+2024-09-08 10:56:38,190 INFO Start polling
+2024-09-08 10:56:38,383 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 10:56:38,771 INFO Update id=69752088 is handled. Duration 296 ms by bot id=7092073070
+2024-09-08 10:57:56,989 INFO Polling stopped
+2024-09-08 10:57:57,264 INFO Database disconnected.
+2024-09-08 10:57:57,265 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 10:59:21,276 INFO Database connected.
+2024-09-08 10:59:21,276 INFO Start polling
+2024-09-08 10:59:21,478 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 10:59:21,802 INFO Update id=69752089 is handled. Duration 234 ms by bot id=7092073070
+2024-09-08 11:09:42,461 INFO Polling stopped
+2024-09-08 11:09:42,722 INFO Database disconnected.
+2024-09-08 11:09:42,723 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 11:09:55,320 INFO Database connected.
+2024-09-08 11:09:55,321 INFO Start polling
+2024-09-08 11:09:55,560 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 11:09:56,540 INFO Update id=69752090 is handled. Duration 250 ms by bot id=7092073070
+2024-09-08 11:10:01,148 INFO Update id=69752091 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 11:10:02,070 INFO Update id=69752092 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 11:10:19,932 INFO Update id=69752093 is handled. Duration 218 ms by bot id=7092073070
+2024-09-08 11:10:21,230 INFO Update id=69752094 is handled. Duration 94 ms by bot id=7092073070
+2024-09-08 11:10:23,212 INFO Update id=69752095 is handled. Duration 94 ms by bot id=7092073070
+2024-09-08 11:10:25,568 INFO Update id=69752096 is handled. Duration 93 ms by bot id=7092073070
+2024-09-08 11:10:28,836 INFO Update id=69752097 is handled. Duration 156 ms by bot id=7092073070
+2024-09-08 11:10:32,291 INFO Update id=69752098 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 11:10:34,229 INFO Update id=69752099 is not handled. Duration 15 ms by bot id=7092073070
+2024-09-08 11:21:19,687 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2024-09-08 11:21:19,687 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
+2024-09-08 11:21:20,692 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2024-09-08 11:21:20,692 WARNING Sleep for 1.109342 seconds and try again... (tryings = 1, bot id = 7092073070)
+2024-09-08 12:18:59,995 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-08 12:18:59,995 WARNING Sleep for 1.480528 seconds and try again... (tryings = 2, bot id = 7092073070)
+2024-09-08 12:19:01,514 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-08 12:19:01,515 WARNING Sleep for 1.998268 seconds and try again... (tryings = 3, bot id = 7092073070)
+2024-09-08 12:19:03,519 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-09-08 12:19:03,519 WARNING Sleep for 2.626671 seconds and try again... (tryings = 4, bot id = 7092073070)
+2024-09-08 12:19:16,347 INFO Connection established (tryings = 5, bot id = 7092073070)
+2024-09-08 12:22:57,063 INFO Polling stopped
+2024-09-08 12:22:57,328 INFO Database disconnected.
+2024-09-08 12:22:57,329 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 12:36:26,863 INFO Database connected.
+2024-09-08 12:36:26,863 INFO Start polling
+2024-09-08 12:36:27,066 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 12:36:27,539 INFO Update id=69752100 is handled. Duration 375 ms by bot id=7092073070
+2024-09-08 12:36:27,541 INFO Update id=69752101 is handled. Duration 390 ms by bot id=7092073070
+2024-09-08 12:36:39,536 INFO Update id=69752102 is handled. Duration 155 ms by bot id=7092073070
+2024-09-08 12:36:44,231 INFO Update id=69752103 is handled. Duration 94 ms by bot id=7092073070
+2024-09-08 12:36:45,780 INFO Update id=69752104 is handled. Duration 187 ms by bot id=7092073070
+2024-09-08 12:36:53,693 INFO Update id=69752105 is handled. Duration 108 ms by bot id=7092073070
+2024-09-08 12:37:04,638 INFO Update id=69752106 is handled. Duration 264 ms by bot id=7092073070
+2024-09-08 12:38:36,516 INFO Polling stopped
+2024-09-08 12:38:36,786 INFO Database disconnected.
+2024-09-08 12:38:36,786 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 12:38:45,434 INFO Database connected.
+2024-09-08 12:38:45,434 INFO Start polling
+2024-09-08 12:38:45,627 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 12:38:49,135 INFO Update id=69752107 is handled. Duration 391 ms by bot id=7092073070
+2024-09-08 12:38:49,653 INFO Update id=69752108 is handled. Duration 141 ms by bot id=7092073070
+2024-09-08 12:38:50,798 INFO Update id=69752109 is handled. Duration 93 ms by bot id=7092073070
+2024-09-08 12:38:52,543 INFO Update id=69752110 is handled. Duration 125 ms by bot id=7092073070
+2024-09-08 12:38:56,857 INFO Update id=69752111 is handled. Duration 155 ms by bot id=7092073070
+2024-09-08 12:39:00,959 INFO Polling stopped
+2024-09-08 12:39:01,222 INFO Database disconnected.
+2024-09-08 12:39:01,222 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:17:31,798 INFO Database connected.
+2024-09-08 13:17:31,798 INFO Start polling
+2024-09-08 13:17:32,067 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:17:32,421 INFO Update id=69752112 is handled. Duration 234 ms by bot id=7092073070
+2024-09-08 13:17:34,783 INFO Update id=69752113 is handled. Duration 94 ms by bot id=7092073070
+2024-09-08 13:18:09,135 INFO Update id=69752114 is not handled. Duration 14 ms by bot id=7092073070
+2024-09-08 13:18:10,233 INFO Update id=69752115 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:18:11,020 INFO Update id=69752116 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:42:49,947 INFO Polling stopped
+2024-09-08 13:42:50,199 INFO Database disconnected.
+2024-09-08 13:42:50,199 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:42:58,903 INFO Database connected.
+2024-09-08 13:42:58,903 INFO Start polling
+2024-09-08 13:42:59,095 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:42:59,193 INFO Update id=69752117 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:42:59,517 INFO Update id=69752118 is handled. Duration 327 ms by bot id=7092073070
+2024-09-08 13:43:00,643 INFO Update id=69752119 is handled. Duration 186 ms by bot id=7092073070
+2024-09-08 13:43:03,789 INFO Update id=69752120 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:43:25,708 INFO Update id=69752121 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:43:26,890 INFO Update id=69752122 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:43:27,017 INFO Update id=69752123 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:43:27,196 INFO Update id=69752124 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:43:27,306 INFO Update id=69752125 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:43:27,458 INFO Update id=69752126 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:45:36,714 INFO Polling stopped
+2024-09-08 13:45:36,984 INFO Database disconnected.
+2024-09-08 13:45:36,984 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:45:45,251 INFO Database connected.
+2024-09-08 13:45:45,251 INFO Start polling
+2024-09-08 13:45:45,433 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:45:45,529 INFO Update id=69752127 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:48:28,045 INFO Polling stopped
+2024-09-08 13:48:28,326 INFO Database disconnected.
+2024-09-08 13:48:28,326 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:48:36,554 INFO Database connected.
+2024-09-08 13:48:36,555 INFO Start polling
+2024-09-08 13:48:36,767 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:48:36,857 INFO Update id=69752128 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:48:39,681 INFO Update id=69752129 is handled. Duration 234 ms by bot id=7092073070
+2024-09-08 13:48:41,884 INFO Update id=69752130 is handled. Duration 110 ms by bot id=7092073070
+2024-09-08 13:48:42,954 INFO Update id=69752131 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:49:49,049 INFO Update id=69752132 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:49:50,926 INFO Update id=69752133 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:50:49,252 INFO Polling stopped
+2024-09-08 13:50:49,535 INFO Database disconnected.
+2024-09-08 13:50:49,536 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:50:57,867 INFO Database connected.
+2024-09-08 13:50:57,868 INFO Start polling
+2024-09-08 13:50:58,047 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:50:59,679 INFO Update id=69752134 is handled. Duration 327 ms by bot id=7092073070
+2024-09-08 13:51:01,391 INFO Update id=69752135 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:57:47,248 INFO Polling stopped
+2024-09-08 13:57:47,506 INFO Database disconnected.
+2024-09-08 13:57:47,506 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:57:55,673 INFO Database connected.
+2024-09-08 13:57:55,674 INFO Start polling
+2024-09-08 13:57:55,882 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:57:55,988 INFO Update id=69752136 is not handled. Duration 15 ms by bot id=7092073070
+2024-09-08 13:57:56,290 INFO Update id=69752137 is handled. Duration 312 ms by bot id=7092073070
+2024-09-08 13:57:58,574 INFO Update id=69752138 is not handled. Duration 16 ms by bot id=7092073070
+2024-09-08 13:58:09,427 INFO Polling stopped
+2024-09-08 13:58:09,695 INFO Database disconnected.
+2024-09-08 13:58:09,695 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:58:18,458 INFO Database connected.
+2024-09-08 13:58:18,458 INFO Start polling
+2024-09-08 13:58:18,644 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:58:18,763 INFO Update id=69752139 is not handled. Duration 14 ms by bot id=7092073070
+2024-09-08 13:58:18,999 INFO Update id=69752141 is handled. Duration 250 ms by bot id=7092073070
+2024-09-08 13:58:19,001 INFO Update id=69752140 is handled. Duration 250 ms by bot id=7092073070
+2024-09-08 13:58:21,044 INFO Update id=69752142 is handled. Duration 77 ms by bot id=7092073070
+2024-09-08 13:58:22,685 INFO Update id=69752143 is handled. Duration 93 ms by bot id=7092073070
+2024-09-08 13:58:27,472 INFO Update id=69752144 is not handled. Duration 0 ms by bot id=7092073070
+2024-09-08 13:58:27,473 ERROR Cause exception while process update id=69752144 by bot id=7092073070
+AttributeError: 'Router' object has no attribute 'send_message'
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 54, in forward_support
+    await router.send_message(ADMIN_CHAT_ID, f"Новое сообщение в техподдержку от пользователя @{message.from_user.username} (ID: {message.from_user.id}):")
+          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Router' object has no attribute 'send_message'
+2024-09-08 13:59:06,375 INFO Polling stopped
+2024-09-08 13:59:06,643 INFO Database disconnected.
+2024-09-08 13:59:06,643 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:59:14,478 INFO Database connected.
+2024-09-08 13:59:14,478 INFO Start polling
+2024-09-08 13:59:14,675 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 13:59:30,767 INFO Update id=69752145 is handled. Duration 250 ms by bot id=7092073070
+2024-09-08 13:59:35,158 INFO Update id=69752146 is handled. Duration 187 ms by bot id=7092073070
+2024-09-08 13:59:36,229 INFO Update id=69752147 is handled. Duration 108 ms by bot id=7092073070
+2024-09-08 13:59:39,996 INFO Update id=69752148 is not handled. Duration 16 ms by bot id=7092073070
+2024-09-08 13:59:39,997 ERROR Cause exception while process update id=69752148 by bot id=7092073070
+AttributeError: 'Router' object has no attribute 'send_message'
+Traceback (most recent call last):
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "D:\Work\Coding\aioQ_bot\app\handlers.py", line 54, in forward_support
+    await router.send_message(ADMIN_CHAT_ID, f"Новое сообщение в техподдержку от пользователя @{message.from_user.username} (ID: {message.from_user.id}):")
+          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Router' object has no attribute 'send_message'
+2024-09-08 14:00:29,117 INFO Polling stopped
+2024-09-08 14:00:29,404 INFO Database disconnected.
+2024-09-08 14:00:29,404 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:00:37,516 INFO Database connected.
+2024-09-08 14:00:37,516 INFO Start polling
+2024-09-08 14:00:37,697 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:00:38,065 INFO Update id=69752149 is handled. Duration 280 ms by bot id=7092073070
+2024-09-08 14:00:42,716 INFO Update id=69752150 is handled. Duration 93 ms by bot id=7092073070
+2024-09-08 14:01:06,293 INFO Update id=69752151 is handled. Duration 250 ms by bot id=7092073070
+2024-09-08 14:01:08,533 INFO Update id=69752152 is handled. Duration 437 ms by bot id=7092073070
+2024-09-08 14:09:23,544 INFO Polling stopped
+2024-09-08 14:09:23,805 INFO Database disconnected.
+2024-09-08 14:09:23,806 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:26:14,798 INFO Database connected.
+2024-09-08 14:26:14,798 INFO Start polling
+2024-09-08 14:26:15,093 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:26:15,549 INFO Update id=69752153 is handled. Duration 359 ms by bot id=7092073070
+2024-09-08 14:26:15,552 INFO Update id=69752155 is handled. Duration 359 ms by bot id=7092073070
+2024-09-08 14:26:15,553 INFO Update id=69752154 is handled. Duration 359 ms by bot id=7092073070
+2024-09-08 14:26:15,581 INFO Update id=69752156 is handled. Duration 391 ms by bot id=7092073070
+2024-09-08 14:26:18,074 INFO Update id=69752157 is handled. Duration 125 ms by bot id=7092073070
+2024-09-08 14:26:36,511 INFO Update id=69752158 is handled. Duration 264 ms by bot id=7092073070
+2024-09-08 14:26:39,558 INFO Update id=69752159 is handled. Duration 780 ms by bot id=7092073070
+2024-09-08 14:30:39,597 INFO Polling stopped
+2024-09-08 14:30:39,887 INFO Database disconnected.
+2024-09-08 14:30:39,888 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:30:40,187 ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015D73995090>
+2024-09-08 14:30:49,318 INFO Database connected.
+2024-09-08 14:30:49,319 INFO Start polling
+2024-09-08 14:30:49,558 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:30:50,964 INFO Update id=69752160 is handled. Duration 265 ms by bot id=7092073070
+2024-09-08 14:30:52,430 INFO Update id=69752161 is handled. Duration 125 ms by bot id=7092073070
+2024-09-08 14:31:00,836 INFO Update id=69752162 is handled. Duration 500 ms by bot id=7092073070
+2024-09-08 14:37:17,703 INFO Polling stopped
+2024-09-08 14:37:17,962 INFO Database disconnected.
+2024-09-08 14:37:17,963 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-09-08 14:37:18,346 ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001D85995DB10>
