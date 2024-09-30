@@ -26,7 +26,7 @@ async def on_shutdown(db):
     logging.info("Database disconnected.")
     
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO, filename="bot_log.log",filemode="a+",
+    logging.basicConfig(level=logging.INFO, filename="bot_log.log",filemode="w+",
                     format="%(asctime)s %(levelname)s %(message)s")
     try:
         asyncio.run(main())

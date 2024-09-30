@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "../kurator_bot"
+			"path": "."
 		},
 		{
-			"path": "."
+			"path": "../ada_bot"
 		}
 	],
 	"settings": {}
