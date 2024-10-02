@@ -13,7 +13,7 @@ from app.database import Database
 from app.keyboards import *
 
 router = Router()
-db = Database(DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME)
+db = Database(DB_PORT, DB_USER, DB_PASSWORD, DB_NAME)
 bot = Bot(token=TOKEN)
 
 class Register(StatesGroup):

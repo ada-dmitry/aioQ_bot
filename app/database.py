@@ -3,8 +3,8 @@ import asyncpg
 from typing import Optional
 
 class Database:
-    def __init__(self, host: str, port: str, user: str, password: str, database: str):
-        self._host = host
+    def __init__(self, port: str, user: str, password: str, database: str):
+        self._host = 'db'
         self._port = port
         self._user = user
         self._password = password
@@ -13,7 +13,7 @@ class Database:
 
     async def connect(self):
         self.pool = await asyncpg.create_pool(
-            host=self._host,
+            host='db',
             port=self._port,
             user=self._user,
             password=self._password,

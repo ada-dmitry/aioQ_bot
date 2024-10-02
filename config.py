@@ -4,6 +4,6 @@ SENIOR_CHAT_ID = "-1002215413703"
 DB_NAME = 'qurator_db'
 DB_USER = 'postgres'
 DB_PASSWORD = 'Qwerty'
-DB_HOST = 'localhost'
+DB_HOST = 'db'
 DB_PORT = '5432'
 TABLE_NAME = 'users'
