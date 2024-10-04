@@ -1,6 +1,5 @@
-2024-09-27 15:37:35,651 INFO Database connected.
-2024-09-27 15:37:35,652 INFO Start polling
-2024-09-27 15:37:36,246 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-09-27 15:50:01,974 INFO Polling stopped
-2024-09-27 15:50:02,229 INFO Database disconnected.
-2024-09-27 15:50:02,230 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-10-03 11:12:02,526 ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F1C4D76E50>
+2024-10-03 11:12:02,527 ERROR Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001F1C63041A0>, 39527.843)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000001F1BF49B710>

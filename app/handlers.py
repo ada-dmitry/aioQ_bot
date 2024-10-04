@@ -13,7 +13,7 @@ from app.database import Database
 from app.keyboards import *
 
 router = Router()
-db = Database(DB_PORT, DB_USER, DB_PASSWORD, DB_NAME)
+db = Database(DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME)
 bot = Bot(token=TOKEN)
 
 class Register(StatesGroup):
@@ -42,11 +42,11 @@ class Admin(StatesGroup):
     send_message = State()
     
 async def curators_from_group_num(group_number: str) -> list:
-    query = f'''SELECT full_name, user_id FROM users WHERE (c_group_1 = $1) OR (c_group_2 = $2)'''
+    query = f'''SELECT full_name FROM users WHERE (c_group_1 = $1) OR (c_group_2 = $2)'''
     curators = []
     tmp1 = await db.fetch(query, group_number, group_number)
     for i in tmp1:
-        curators.append([i['user_id'], i['full_name']])
+        curators.append(i['full_name'])
     return curators
          
     
@@ -72,14 +72,14 @@ async def report_choice(callback_query: CallbackQuery):
         curators_data = await curators_from_group_num(group_number=group_num)
         cur_names = []
         for i in range(len(curators_data)):
-            cur_names.append(curators_data[i][1])
+            cur_names.append(curators_data[i])
         keyboard = create_inline_keyboard(curators_data)
         
         await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id,
                                 text=f'''Ваша группа: {group_num}\nВаши кураторы: {", ".join(str(x) for x in cur_names)}
 Вы можете выбрать куратора, о работе которого хотите отчитаться, ниже.''',
-                                    reply_markup=keyboard, ) 
+                                    reply_markup=keyboard) 
     elif(role == 'curator'):
         await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id,

@@ -75,8 +75,8 @@ def create_inline_keyboard(items):
     
     # Добавляем кнопки в клавиатуру
     for item in items:
-        tmp = f'''item_{item[1]}'''
-        keyboard_builder.button(text=str(item[1]), callback_data=tmp)
+        tmp = f'''item_{item}'''
+        keyboard_builder.button(text=str(item), callback_data=tmp)
     keyboard_builder.button(text='Назад', callback_data='profile')
     # Генерация готовой клавиатуры
     return keyboard_builder.as_markup()

@@ -12,7 +12,8 @@ services:
       - ./q_db.sql:/docker-entrypoint-initdb.d/q_db.sql
 
   app:
-    image: docker_python_bot:latest
+    # image: docker_python_bot:latest
+    build: .
     depends_on:
       - db
     environment:
