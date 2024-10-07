@@ -1,5 +1,0 @@
-2024-10-03 11:12:02,526 ERROR Unclosed client session
-client_session: <aiohttp.client.ClientSession object at 0x000001F1C4D76E50>
-2024-10-03 11:12:02,527 ERROR Unclosed connector
-connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001F1C63041A0>, 39527.843)]']
-connector: <aiohttp.connector.TCPConnector object at 0x000001F1BF49B710>

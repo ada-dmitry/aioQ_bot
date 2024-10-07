@@ -41,7 +41,7 @@ start_reg_button = ReplyKeyboardMarkup(keyboard=[
                                   resize_keyboard=True)
 
 help_kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text='👾 Тех.Поддержка 👾', callback_data='support')]
+        [InlineKeyboardButton(text='Тех.Поддержка', callback_data='support')]
         # [InlineKeyboardButton(text='😎 Ст.Куратор 😎', callback_data='senior')]
     ])
 

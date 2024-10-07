@@ -6,7 +6,7 @@ from aiogram.fsm.context import FSMContext
 import re
 from aiogram import Bot
 
-from config import DB_HOST, DB_NAME, DB_PASSWORD, DB_USER, DB_PORT, ADMIN_CHAT_ID, TOKEN, SENIOR_CHAT_ID
+from config import DB_HOST, DB_NAME, DB_PASSWORD, DB_USER, DB_PORT, ADMIN_CHAT_ID, TOKEN
 
 from app.texts import *
 from app.database import Database
@@ -40,8 +40,17 @@ class Report_Cur(StatesGroup):
 class Admin(StatesGroup):
     send_user_id = State()
     send_message = State()
+    wait_query = State()
     
 async def curators_from_group_num(group_number: str) -> list:
+    """Функция для вывода кураторов по заданной группе
+
+    Args:
+        group_number (str): группа пользователя (выбирается запросом из БД)
+
+    Returns:
+        list: Список кураторов группы
+    """    
     query = f'''SELECT full_name FROM users WHERE (c_group_1 = $1) OR (c_group_2 = $2)'''
     curators = []
     tmp1 = await db.fetch(query, group_number, group_number)
@@ -52,6 +61,11 @@ async def curators_from_group_num(group_number: str) -> list:
     
 @router.message(CommandStart())
 async def cmd_start(message: Message):
+    """Функция старта бота /start
+
+    Args:
+        message (Message): сообщение пользователя
+    """    
     user_id = message.from_user.id
     query = 'SELECT * FROM users WHERE user_id = $1'
     db_response = await db.fetch(query, user_id)
@@ -62,6 +76,11 @@ async def cmd_start(message: Message):
         
 @router.callback_query(lambda c: c.data in ['report'])
 async def report_choice(callback_query: CallbackQuery):
+    """Функция отчета для кураторов и первокурсников
+
+    Args:
+        callback_query (CallbackQuery): Ответ от клавиатуры (отчет, чек-лист, удалить аккаунт)
+    """    
     user_id = callback_query.from_user.id
     query = f"""SELECT role, group_number FROM users WHERE user_id = $1"""
     tmp1 = await db.fetch(query, user_id)
@@ -215,6 +234,8 @@ async def take_review(message: Message, state: FSMContext):
         await bot.send_message(chat_id=ADMIN_CHAT_ID, text=f'Отзыв на куратора {name}: {message.text}')
     
         
+''' Блок команд для профиля '''
+
 @router.callback_query(lambda c: c.data in ['profile'])        
 @router.callback_query(Command('profile'))
 async def get_profile(callback_query: CallbackQuery):
@@ -257,6 +278,8 @@ async def get_profile(callback_query: CallbackQuery):
                                 reply_markup=profile_kb_admin, parse_mode="Markdown")
         await bot.answer_callback_query(callback_query.id)
         
+''' Блок команд для отправки отчета '''
+        
 @router.callback_query(lambda c: c.data in ['send_reply'])
 async def reply_from_admin_1(callback_query: CallbackQuery, state: FSMContext):
     await state.set_state(Admin.send_user_id)
@@ -273,7 +296,7 @@ async def reply_from_admin_2(message: Message, state: FSMContext):
     await message.reply(f'Отправьте сообщение для этого пользователя')
     
 @router.message(Admin.send_message)
-async def reply_from_admin_2(message: Message, state: FSMContext):
+async def reply_from_admin_3(message: Message, state: FSMContext):
     tmp = await state.get_data()
     user_id = tmp['send_user_id']
     await state.set_state(Admin.send_message)
@@ -282,35 +305,29 @@ async def reply_from_admin_2(message: Message, state: FSMContext):
     await message.answer('Сообщение отправлено.', reply_markup=profile_kb_admin)
     
     
+''' Блок команд для вызова справки и ТП '''    
     
 @router.message(Command('help'))
 @router.message(F.text == 'Помощь')
 async def get_help(message: Message):
     await message.answer(help, reply_markup=help_kb)
     
-@router.message(F.text == '👾 Тех.Поддержка 👾')
-async def get_support(message: Message, state: FSMContext):
+@router.callback_query(lambda c: c.data in ['support']) 
+async def get_support(callback_query: CallbackQuery, state: FSMContext):
     await state.set_state(Help.wait_support)
-    await message.answer('Опишите проблему/жалобу/предложение ОДНИМ сообщением: ')
+    await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
+                                message_id=callback_query.message.message_id, 
+                                text='Опишите проблему/жалобу/предложение ОДНИМ сообщением: ',
+                                reply_markup=None)
     
-# @router.message(F.text == '😎 Ст.Куратор 😎')
-# async def get_senior(message: Message, state: FSMContext):
-#         await state.set_state(Help.wait_senior)
-#         await message.answer('Напишите обращение к старшему куратору ОДНИМ сообщением: ')  
-
 @router.message(Help.wait_support)
 async def forward_support(message: Message, state: FSMContext):
     await bot.send_message(ADMIN_CHAT_ID, f"Новое сообщение в техподдержку от пользователя @{message.from_user.username} (ID: {message.from_user.id}):")
     await message.forward(ADMIN_CHAT_ID)
     await message.reply("Ваше сообщение отправлено в техподдержку. Мы свяжемся с вами в ближайшее время.")
     await state.clear()
-    
-# @router.message(Help.wait_senior)
-# async def forward_senior(message: Message, state: FSMContext):
-#     await bot.send_message(SENIOR_CHAT_ID, f"Новое сообщение для ст.кураторов от пользователя @{message.from_user.username} (ID: {message.from_user.id}):")
-#     await message.forward(SENIOR_CHAT_ID)
-#     await message.reply("Ваше сообщение отправлено старшим кураторам. Мы свяжемся с вами в ближайшее время.")
-#     await state.clear()
+
+''' Блок хендлэров для регистрации '''
 
 @router.message(Command('reg'))
 @router.message(F.text == 'Поехали!')
@@ -411,3 +428,28 @@ async def del_user_2(callback_query: CallbackQuery):
     await bot.answer_callback_query(callback_query.id)
     
     
+    
+''' Блок хендлэров для админа '''
+@router.message(Command('query_q'))
+async def query(message: Message, state: FSMContext):
+    user_id = message.from_user.id
+    query = '''SELECT role FROM users WHERE user_id = $1'''
+    role = await db.fetch(query, user_id)
+    if(role != 'admin'):
+        pass
+    else:
+        await state.set_state(Admin.wait_query)
+        await message.answer('select_q, delete_q, update_q, insert_q')
+        
+@router.message(Admin.wait_query and Command('select_q'))
+async def query_select(message: Message, state: FSMContext):
+    query = message.text
+    response = await db.fetch(query=query)
+    await state.clear()
+    
+
+@router.message(Admin.wait_query and (Command('delete_q') or Command('update_q') or Command('insert_q'))) 
+async def query_delete(message: Message, state: FSMContext):
+    query = message.text
+    response = await db.execute(query=query)
+    await state.clear()
