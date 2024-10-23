@@ -252,7 +252,7 @@ async def get_profile(callback_query: CallbackQuery):
         await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
                                 text=f'''***Ваш профиль:***\nФИО: _{full_name}_\nРоль: _{role}_\nГруппа: _{group_number}_''',
-                                reply_markup=profile_kb, parse_mode="Markdown")
+                                reply_markup=profile_kb)
         await bot.answer_callback_query(callback_query.id)
     elif(role == 'Куратор'):
         group_1 = usr['c_group_1']
@@ -262,20 +262,20 @@ async def get_profile(callback_query: CallbackQuery):
                                 message_id=callback_query.message.message_id, 
                                 text=f'''***Ваш профиль:***\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}\n\
 # Группы на кураторстве:\n{group_1.strip()}, {group_2.strip()}''',
-                                reply_markup=profile_kb, parse_mode="Markdown")
+                                reply_markup=profile_kb)
             await bot.answer_callback_query(callback_query.id)
         else:
             await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
                                 text=f'''***Ваш профиль:***\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}\n\
 # Группы на кураторстве: {group_1}''',
-                                reply_markup=profile_kb, parse_mode="Markdown")
+                                reply_markup=profile_kb)
             await bot.answer_callback_query(callback_query.id)
     elif(role == 'Модератор'):
         await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
                                 text=f'''**Ваш профиль:**\nФИО: _{full_name}_\nРоль: _{role}_''',
-                                reply_markup=profile_kb_admin, parse_mode="Markdown")
+                                reply_markup=profile_kb_admin)
         await bot.answer_callback_query(callback_query.id)
         
 ''' Блок команд для отправки отчета '''

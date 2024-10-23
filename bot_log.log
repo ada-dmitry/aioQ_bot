@@ -1,0 +1,8 @@
+2024-10-23 22:19:01,477 INFO Database connected.
+2024-10-23 22:19:01,477 INFO Start polling
+2024-10-23 22:19:01,638 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-10-23 22:19:01,885 INFO Update id=69753116 is handled. Duration 187 ms by bot id=7092073070
+2024-10-23 22:19:01,886 ERROR Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-10-23 22:19:01,886 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
+2024-10-23 22:19:07,015 ERROR Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-10-23 22:19:07,015 WARNING Sleep for 1.370594 seconds and try again... (tryings = 1, bot id = 7092073070)
