@@ -1,8 +1,17 @@
-2024-10-23 22:19:01,477 INFO Database connected.
-2024-10-23 22:19:01,477 INFO Start polling
-2024-10-23 22:19:01,638 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
-2024-10-23 22:19:01,885 INFO Update id=69753116 is handled. Duration 187 ms by bot id=7092073070
-2024-10-23 22:19:01,886 ERROR Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
-2024-10-23 22:19:01,886 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
-2024-10-23 22:19:07,015 ERROR Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
-2024-10-23 22:19:07,015 WARNING Sleep for 1.370594 seconds and try again... (tryings = 1, bot id = 7092073070)
+2024-10-23 22:24:54,875 INFO Database connected.
+2024-10-23 22:24:54,876 INFO Start polling
+2024-10-23 22:24:55,050 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-10-23 22:24:55,367 INFO Update id=69753128 is handled. Duration 250 ms by bot id=7092073070
+2024-10-23 22:24:57,693 INFO Update id=69753129 is handled. Duration 547 ms by bot id=7092073070
+2024-10-23 22:25:02,338 INFO Update id=69753130 is handled. Duration 62 ms by bot id=7092073070
+2024-10-23 22:25:06,109 INFO Update id=69753131 is handled. Duration 62 ms by bot id=7092073070
+2024-10-23 22:25:16,444 INFO Update id=69753132 is handled. Duration 77 ms by bot id=7092073070
+2024-10-23 22:25:17,753 INFO Update id=69753133 is handled. Duration 219 ms by bot id=7092073070
+2024-10-23 22:25:27,906 INFO Update id=69753134 is handled. Duration 77 ms by bot id=7092073070
+2024-10-23 22:25:30,226 INFO Update id=69753135 is handled. Duration 358 ms by bot id=7092073070
+2024-10-23 22:25:32,177 INFO Update id=69753136 is handled. Duration 186 ms by bot id=7092073070
+2024-10-23 22:25:52,971 INFO Polling stopped
+2024-10-23 22:25:53,245 INFO Database disconnected.
+2024-10-23 22:25:53,245 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'Q-bot'
+2024-10-23 22:25:53,392 ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C6A676E090>

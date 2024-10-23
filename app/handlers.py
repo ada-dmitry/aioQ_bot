@@ -251,7 +251,7 @@ async def get_profile(callback_query: CallbackQuery):
     if(role == 'Первокурсник'):
         await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
-                                text=f'''***Ваш профиль:***\nФИО: _{full_name}_\nРоль: _{role}_\nГруппа: _{group_number}_''',
+                                text=f'''Ваш профиль:\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}''',
                                 reply_markup=profile_kb)
         await bot.answer_callback_query(callback_query.id)
     elif(role == 'Куратор'):
@@ -260,21 +260,21 @@ async def get_profile(callback_query: CallbackQuery):
         if(group_2!=None):
             await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
-                                text=f'''***Ваш профиль:***\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}\n\
+                                text=f'''Ваш профиль:\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}\n\
 # Группы на кураторстве:\n{group_1.strip()}, {group_2.strip()}''',
                                 reply_markup=profile_kb)
             await bot.answer_callback_query(callback_query.id)
         else:
             await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
-                                text=f'''***Ваш профиль:***\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}\n\
+                                text=f'''Ваш профиль:\nФИО: {full_name}\nРоль: {role}\nГруппа: {group_number}\n\
 # Группы на кураторстве: {group_1}''',
                                 reply_markup=profile_kb)
             await bot.answer_callback_query(callback_query.id)
     elif(role == 'Модератор'):
         await bot.edit_message_text(chat_id=callback_query.message.chat.id, 
                                 message_id=callback_query.message.message_id, 
-                                text=f'''**Ваш профиль:**\nФИО: _{full_name}_\nРоль: _{role}_''',
+                                text=f'''**Ваш профиль:**\nФИО: {full_name}\nРоль: {role}''',
                                 reply_markup=profile_kb_admin)
         await bot.answer_callback_query(callback_query.id)
         
