@@ -429,7 +429,8 @@ async def del_user_2(callback_query: CallbackQuery):
     
     
     
-''' Блок хендлэров для админа '''
+
+""" # Блок хендлэров для админа 
 @router.message(Command('query_q'))
 async def query(message: Message, state: FSMContext):
     user_id = message.from_user.id
@@ -453,3 +454,4 @@ async def query_delete(message: Message, state: FSMContext):
     query = message.text
     response = await db.execute(query=query)
     await state.clear()
+"""
