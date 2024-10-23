@@ -3,3 +3,4 @@ __pycache__
 aioq_bot.tar
 data.txt
 app/__pycache__
+docker-compose.yml
