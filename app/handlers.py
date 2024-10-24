@@ -16,11 +16,6 @@ router = Router()
 db = Database(DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME)
 bot = Bot(token=TOKEN)
 
-class Register(StatesGroup):
-    name = State()
-    role = State()
-    group_number = State()
-    curator_groups = State()
     
 class Help(StatesGroup):
     wait_support = State()
@@ -59,20 +54,20 @@ async def curators_from_group_num(group_number: str) -> list:
     return curators
          
     
-@router.message(CommandStart())
-async def cmd_start(message: Message):
-    """Функция старта бота /start
+# @router.message(CommandStart())
+# async def cmd_start(message: Message):
+#     """Функция старта бота /start
 
-    Args:
-        message (Message): сообщение пользователя
-    """    
-    user_id = message.from_user.id
-    query = 'SELECT * FROM users WHERE user_id = $1'
-    db_response = await db.fetch(query, user_id)
-    if(db_response == []):
-        await message.answer(welcome, reply_markup=start_reg_button)
-    else:
-        await message.answer(welcome_again, reply_markup=welcome_again_kb)
+#     Args:
+#         message (Message): сообщение пользователя
+#     """    
+#     user_id = message.from_user.id
+#     query = 'SELECT * FROM users WHERE user_id = $1'
+#     db_response = await db.fetch(query, user_id)
+#     if(db_response == []):
+#         await message.answer(welcome, reply_markup=start_reg_button)
+#     else:
+#         await message.answer(welcome_again, reply_markup=welcome_again_kb)
         
 @router.callback_query(lambda c: c.data in ['report'])
 async def report_choice(callback_query: CallbackQuery):
@@ -85,7 +80,7 @@ async def report_choice(callback_query: CallbackQuery):
     query = f"""SELECT role, group_number FROM users WHERE user_id = $1"""
     tmp1 = await db.fetch(query, user_id)
     tmp2 = tmp1[0]
-    role = tmp2['role']
+    role = tmp2['role'] 
     group_num = str(tmp2['group_number'])
     if(role == 'freshman'): 
         curators_data = await curators_from_group_num(group_number=group_num)
@@ -161,7 +156,7 @@ async def take_report_curator_4(message: Message, state: FSMContext):
     current_data = await state.get_data()
     await state.clear()
     photo = message.photo[-1]
-    user_id = message.from_user.id
+    user_id = message.from_user.id 
     username = message.from_user.username
     event = current_data['name']
     group = current_data['group']
@@ -327,8 +322,7 @@ async def forward_support(message: Message, state: FSMContext):
     await message.reply("Ваше сообщение отправлено в техподдержку. Мы свяжемся с вами в ближайшее время.")
     await state.clear()
 
-''' Блок хендлэров для регистрации '''
-
+''' # Блок хендлэров для регистрации 
 @router.message(Command('reg'))
 @router.message(F.text == 'Поехали!')
 async def start_register(message: Message | CallbackQuery, state: FSMContext):
@@ -426,6 +420,7 @@ async def del_user_2(callback_query: CallbackQuery):
                                 text='Ваш профиль удален. Введите /start для повторной регистрации.',
                                 reply_markup=None) 
     await bot.answer_callback_query(callback_query.id)
+'''
     
     
     
