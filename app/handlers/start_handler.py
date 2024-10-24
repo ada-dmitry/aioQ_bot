@@ -1,4 +1,14 @@
-@router.message(CommandStart())
+from aiogram import Router
+from aiogram.filters import CommandStart
+from aiogram.types import Message
+
+from app.handlers.conn import db
+from app.keyboards import *
+from app.texts import *
+
+start_router = Router()
+
+@start_router.message(CommandStart())
 async def cmd_start(message: Message):
     """Функция старта бота /start
 

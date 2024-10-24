@@ -19,3 +19,196 @@ client_session: <aiohttp.client.ClientSession object at 0x000001C6A676E090>
 2024-10-24 12:31:08,640 INFO Start polling
 2024-10-24 12:31:20,692 INFO Polling stopped
 2024-10-24 12:31:20,979 INFO Database disconnected.
+2024-10-24 13:27:47,403 INFO Database connected.
+2024-10-24 13:27:47,404 INFO Start polling
+2024-10-24 13:27:48,022 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 13:27:48,139 INFO Update id=69753137 is not handled. Duration 0 ms by bot id=7092073070
+2024-10-24 13:28:13,069 INFO Update id=69753138 is handled. Duration 375 ms by bot id=7092073070
+2024-10-24 13:28:13,906 INFO Update id=69753139 is not handled. Duration 0 ms by bot id=7092073070
+2024-10-24 13:28:21,762 INFO Polling stopped
+2024-10-24 13:28:22,050 INFO Database disconnected.
+2024-10-24 13:28:22,051 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 13:28:31,336 INFO Database connected.
+2024-10-24 13:28:31,336 INFO Start polling
+2024-10-24 13:28:32,054 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 13:28:33,136 INFO Update id=69753140 is handled. Duration 953 ms by bot id=7092073070
+2024-10-24 13:28:34,437 INFO Update id=69753141 is not handled. Duration 0 ms by bot id=7092073070
+2024-10-24 13:28:53,328 INFO Update id=69753142 is handled. Duration 688 ms by bot id=7092073070
+2024-10-24 13:28:53,912 INFO Polling stopped
+2024-10-24 13:28:54,202 INFO Database disconnected.
+2024-10-24 13:28:54,203 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 13:40:25,528 INFO Database connected.
+2024-10-24 13:40:25,529 INFO Start polling
+2024-10-24 13:40:26,081 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 13:40:26,730 INFO Update id=69753143 is handled. Duration 515 ms by bot id=7092073070
+2024-10-24 13:40:26,738 INFO Update id=69753144 is handled. Duration 531 ms by bot id=7092073070
+2024-10-24 13:40:28,292 INFO Update id=69753145 is handled. Duration 514 ms by bot id=7092073070
+2024-10-24 13:58:41,968 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] ѕодключение к сети было разорвано локальной системой
+2024-10-24 13:58:41,969 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7092073070)
+2024-10-24 13:58:53,650 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 13:58:53,651 WARNING Sleep for 1.185164 seconds and try again... (tryings = 1, bot id = 7092073070)
+2024-10-24 13:59:14,567 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 13:59:14,568 WARNING Sleep for 1.478082 seconds and try again... (tryings = 2, bot id = 7092073070)
+2024-10-24 13:59:29,338 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 13:59:29,338 WARNING Sleep for 1.898142 seconds and try again... (tryings = 3, bot id = 7092073070)
+2024-10-24 13:59:41,207 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 13:59:41,208 WARNING Sleep for 2.579242 seconds and try again... (tryings = 4, bot id = 7092073070)
+2024-10-24 13:59:44,303 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 13:59:44,303 WARNING Sleep for 3.298121 seconds and try again... (tryings = 5, bot id = 7092073070)
+2024-10-24 13:59:53,070 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 13:59:53,070 WARNING Sleep for 4.085319 seconds and try again... (tryings = 6, bot id = 7092073070)
+2024-10-24 13:59:59,229 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 13:59:59,229 WARNING Sleep for 5.063713 seconds and try again... (tryings = 7, bot id = 7092073070)
+2024-10-24 14:00:04,899 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:00:04,899 WARNING Sleep for 4.980970 seconds and try again... (tryings = 8, bot id = 7092073070)
+2024-10-24 14:00:14,190 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:00:14,190 WARNING Sleep for 4.928790 seconds and try again... (tryings = 9, bot id = 7092073070)
+2024-10-24 14:00:43,912 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:00:43,912 WARNING Sleep for 4.994149 seconds and try again... (tryings = 10, bot id = 7092073070)
+2024-10-24 14:00:52,724 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:00:52,724 WARNING Sleep for 5.065010 seconds and try again... (tryings = 11, bot id = 7092073070)
+2024-10-24 14:00:59,083 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:00:59,083 WARNING Sleep for 5.189898 seconds and try again... (tryings = 12, bot id = 7092073070)
+2024-10-24 14:01:04,390 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:01:04,390 WARNING Sleep for 4.763632 seconds and try again... (tryings = 13, bot id = 7092073070)
+2024-10-24 14:01:16,257 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:01:16,258 WARNING Sleep for 4.944315 seconds and try again... (tryings = 14, bot id = 7092073070)
+2024-10-24 14:01:28,262 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:01:28,262 WARNING Sleep for 4.900744 seconds and try again... (tryings = 15, bot id = 7092073070)
+2024-10-24 14:01:40,129 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:01:40,129 WARNING Sleep for 4.897783 seconds and try again... (tryings = 16, bot id = 7092073070)
+2024-10-24 14:01:52,036 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:01:52,036 WARNING Sleep for 5.235761 seconds and try again... (tryings = 17, bot id = 7092073070)
+2024-10-24 14:02:03,529 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:02:03,529 WARNING Sleep for 5.073397 seconds and try again... (tryings = 18, bot id = 7092073070)
+2024-10-24 14:02:13,573 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:02:13,573 WARNING Sleep for 4.943853 seconds and try again... (tryings = 19, bot id = 7092073070)
+2024-10-24 14:02:39,367 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:02:39,368 WARNING Sleep for 4.769879 seconds and try again... (tryings = 20, bot id = 7092073070)
+2024-10-24 14:02:51,211 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:02:51,211 WARNING Sleep for 4.844723 seconds and try again... (tryings = 21, bot id = 7092073070)
+2024-10-24 14:02:58,305 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:02:58,305 WARNING Sleep for 5.066343 seconds and try again... (tryings = 22, bot id = 7092073070)
+2024-10-24 14:03:03,426 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:03:03,426 WARNING Sleep for 4.925621 seconds and try again... (tryings = 23, bot id = 7092073070)
+2024-10-24 14:03:12,961 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:03:12,961 WARNING Sleep for 5.018465 seconds and try again... (tryings = 24, bot id = 7092073070)
+2024-10-24 14:03:38,724 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:03:38,724 WARNING Sleep for 4.922202 seconds and try again... (tryings = 25, bot id = 7092073070)
+2024-10-24 14:03:43,690 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:03:43,690 WARNING Sleep for 5.074512 seconds and try again... (tryings = 26, bot id = 7092073070)
+2024-10-24 14:03:50,657 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:03:50,658 WARNING Sleep for 4.976668 seconds and try again... (tryings = 27, bot id = 7092073070)
+2024-10-24 14:03:57,831 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:03:57,831 WARNING Sleep for 5.021147 seconds and try again... (tryings = 28, bot id = 7092073070)
+2024-10-24 14:04:02,890 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:04:02,891 WARNING Sleep for 5.111671 seconds and try again... (tryings = 29, bot id = 7092073070)
+2024-10-24 14:04:14,447 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:04:14,447 WARNING Sleep for 4.911876 seconds and try again... (tryings = 30, bot id = 7092073070)
+2024-10-24 14:04:27,600 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:04:27,600 WARNING Sleep for 5.023455 seconds and try again... (tryings = 31, bot id = 7092073070)
+2024-10-24 14:04:38,113 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:04:38,115 WARNING Sleep for 5.043839 seconds and try again... (tryings = 32, bot id = 7092073070)
+2024-10-24 14:04:49,904 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:04:49,905 WARNING Sleep for 5.041886 seconds and try again... (tryings = 33, bot id = 7092073070)
+2024-10-24 14:05:01,901 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:05:01,901 WARNING Sleep for 4.844469 seconds and try again... (tryings = 34, bot id = 7092073070)
+2024-10-24 14:05:12,420 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:05:12,420 WARNING Sleep for 4.964959 seconds and try again... (tryings = 35, bot id = 7092073070)
+2024-10-24 14:05:25,922 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:05:25,923 WARNING Sleep for 5.069522 seconds and try again... (tryings = 36, bot id = 7092073070)
+2024-10-24 14:05:37,631 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:05:37,631 WARNING Sleep for 5.146031 seconds and try again... (tryings = 37, bot id = 7092073070)
+2024-10-24 14:05:57,053 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:05:57,053 WARNING Sleep for 4.843645 seconds and try again... (tryings = 38, bot id = 7092073070)
+2024-10-24 14:06:25,023 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:06:25,023 WARNING Sleep for 4.962375 seconds and try again... (tryings = 39, bot id = 7092073070)
+2024-10-24 14:06:36,884 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:06:36,884 WARNING Sleep for 4.920166 seconds and try again... (tryings = 40, bot id = 7092073070)
+2024-10-24 14:06:41,852 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:06:41,853 WARNING Sleep for 4.978590 seconds and try again... (tryings = 41, bot id = 7092073070)
+2024-10-24 14:06:48,763 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:06:48,764 WARNING Sleep for 4.995605 seconds and try again... (tryings = 42, bot id = 7092073070)
+2024-10-24 14:06:56,741 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:06:56,741 WARNING Sleep for 4.984624 seconds and try again... (tryings = 43, bot id = 7092073070)
+2024-10-24 14:07:24,330 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:07:24,331 WARNING Sleep for 4.915668 seconds and try again... (tryings = 44, bot id = 7092073070)
+2024-10-24 14:07:36,258 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:07:36,259 WARNING Sleep for 5.175007 seconds and try again... (tryings = 45, bot id = 7092073070)
+2024-10-24 14:07:41,500 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:07:41,500 WARNING Sleep for 4.854912 seconds and try again... (tryings = 46, bot id = 7092073070)
+2024-10-24 14:07:48,244 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:07:48,244 WARNING Sleep for 5.100956 seconds and try again... (tryings = 47, bot id = 7092073070)
+2024-10-24 14:07:56,395 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:07:56,395 WARNING Sleep for 4.941771 seconds and try again... (tryings = 48, bot id = 7092073070)
+2024-10-24 14:08:01,374 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:08:01,374 WARNING Sleep for 4.899779 seconds and try again... (tryings = 49, bot id = 7092073070)
+2024-10-24 14:08:11,334 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:08:11,334 WARNING Sleep for 5.006608 seconds and try again... (tryings = 50, bot id = 7092073070)
+2024-10-24 14:08:23,958 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:08:23,959 WARNING Sleep for 4.901846 seconds and try again... (tryings = 51, bot id = 7092073070)
+2024-10-24 14:08:41,124 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:08:41,125 WARNING Sleep for 4.972571 seconds and try again... (tryings = 52, bot id = 7092073070)
+2024-10-24 14:08:47,623 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:08:47,623 WARNING Sleep for 5.071735 seconds and try again... (tryings = 53, bot id = 7092073070)
+2024-10-24 14:08:56,040 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:08:56,041 WARNING Sleep for 5.001642 seconds and try again... (tryings = 54, bot id = 7092073070)
+2024-10-24 14:09:10,994 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:09:10,995 WARNING Sleep for 4.872113 seconds and try again... (tryings = 55, bot id = 7092073070)
+2024-10-24 14:09:23,065 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:09:23,065 WARNING Sleep for 4.889144 seconds and try again... (tryings = 56, bot id = 7092073070)
+2024-10-24 14:09:35,296 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:09:35,296 WARNING Sleep for 5.070544 seconds and try again... (tryings = 57, bot id = 7092073070)
+2024-10-24 14:09:40,689 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:09:40,689 WARNING Sleep for 4.885570 seconds and try again... (tryings = 58, bot id = 7092073070)
+2024-10-24 14:09:46,977 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:09:46,977 WARNING Sleep for 5.084221 seconds and try again... (tryings = 59, bot id = 7092073070)
+2024-10-24 14:09:58,616 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:09:58,617 WARNING Sleep for 5.011173 seconds and try again... (tryings = 60, bot id = 7092073070)
+2024-10-24 14:10:10,479 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:10:10,479 WARNING Sleep for 4.992616 seconds and try again... (tryings = 61, bot id = 7092073070)
+2024-10-24 14:10:22,541 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:10:22,541 WARNING Sleep for 4.901304 seconds and try again... (tryings = 62, bot id = 7092073070)
+2024-10-24 14:10:34,490 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:10:34,490 WARNING Sleep for 5.208030 seconds and try again... (tryings = 63, bot id = 7092073070)
+2024-10-24 14:10:46,344 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:10:46,345 WARNING Sleep for 4.869662 seconds and try again... (tryings = 64, bot id = 7092073070)
+2024-10-24 14:10:55,572 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:10:55,572 WARNING Sleep for 4.990136 seconds and try again... (tryings = 65, bot id = 7092073070)
+2024-10-24 14:11:10,321 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [”казанное сетевое им€ более недоступно]
+2024-10-24 14:11:10,321 WARNING Sleep for 5.012223 seconds and try again... (tryings = 66, bot id = 7092073070)
+2024-10-24 14:11:22,025 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.telegram.org'. (_ssl.c:1006)")]
+2024-10-24 14:11:22,026 WARNING Sleep for 5.004322 seconds and try again... (tryings = 67, bot id = 7092073070)
+2024-10-24 14:11:28,967 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [ѕодключение к сети было разорвано локальной системой]
+2024-10-24 14:11:28,968 WARNING Sleep for 5.303355 seconds and try again... (tryings = 68, bot id = 7092073070)
+2024-10-24 14:11:44,615 INFO Connection established (tryings = 69, bot id = 7092073070)
+2024-10-24 14:12:16,625 INFO Polling stopped
+2024-10-24 14:12:16,888 INFO Database disconnected.
+2024-10-24 14:12:16,888 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 14:12:26,908 INFO Database connected.
+2024-10-24 14:12:26,909 INFO Start polling
+2024-10-24 14:12:27,911 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 14:12:29,351 INFO Update id=69753146 is handled. Duration 921 ms by bot id=7092073070
+2024-10-24 14:12:43,164 INFO Update id=69753147 is handled. Duration 468 ms by bot id=7092073070
+2024-10-24 14:12:46,280 INFO Update id=69753148 is handled. Duration 297 ms by bot id=7092073070
+2024-10-24 14:12:53,789 INFO Update id=69753149 is handled. Duration 562 ms by bot id=7092073070
+2024-10-24 14:12:59,770 INFO Update id=69753150 is handled. Duration 125 ms by bot id=7092073070
+2024-10-24 14:13:02,324 INFO Update id=69753151 is handled. Duration 313 ms by bot id=7092073070
+2024-10-24 14:13:06,331 INFO Update id=69753152 is handled. Duration 311 ms by bot id=7092073070
+2024-10-24 14:13:14,591 INFO Update id=69753153 is handled. Duration 531 ms by bot id=7092073070
+2024-10-24 14:13:18,496 INFO Update id=69753154 is handled. Duration 421 ms by bot id=7092073070
+2024-10-24 14:13:25,642 INFO Polling stopped
+2024-10-24 14:13:25,919 INFO Database disconnected.
+2024-10-24 14:13:25,920 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 14:14:52,817 INFO Database connected.
+2024-10-24 14:14:52,817 INFO Start polling
+2024-10-24 14:14:53,228 INFO Run polling for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
+2024-10-24 14:14:54,281 INFO Update id=69753155 is handled. Duration 891 ms by bot id=7092073070
+2024-10-24 14:14:56,152 INFO Update id=69753156 is handled. Duration 203 ms by bot id=7092073070
+2024-10-24 14:14:57,624 INFO Update id=69753157 is handled. Duration 203 ms by bot id=7092073070
+2024-10-24 14:15:00,479 INFO Update id=69753158 is handled. Duration 155 ms by bot id=7092073070
+2024-10-24 14:15:03,403 INFO Update id=69753159 is handled. Duration 594 ms by bot id=7092073070
+2024-10-24 14:15:04,990 INFO Update id=69753160 is handled. Duration 531 ms by bot id=7092073070
+2024-10-24 14:16:21,923 INFO Polling stopped
+2024-10-24 14:16:22,204 INFO Database disconnected.
+2024-10-24 14:16:22,205 INFO Polling stopped for bot @q_mephi_bot id=7092073070 - 'QuratorBotMephi'
